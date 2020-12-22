@@ -30,24 +30,24 @@ IOU = Area of Intersection / Area of Union
 ![Detection Image](reports/Picture1.jpg)
 ![Ground Truth Label Image](reports/Picture2.jpg)
 
-**Ground Truth:**
-Initial - 256, 150
+**Ground Truth:** <br>
+Initial - 256, 150 <br>
 Final - 286, 256
 
-**Detection:**
-Initial - 255, 163
+**Detection:** <br>
+Initial - 255, 163 <br>
 Final - 286, 260
 
-Area of Ground truth = 3180
+Area of Ground truth = 3180 <br>
 Area of Detection = 3007
 
-x1 = max(groundTruth.xIn, detection.xIn)
-y1 = max(groundTruth.yIn, detection.yIn)
-x2 = min(groundTruth.xFn, detection.xFn)
-y2 = min(groundTruth.yFn, detection.yFn)
+x1 = max(groundTruth.xIn, detection.xIn) <br>
+y1 = max(groundTruth.yIn, detection.yIn) <br>
+x2 = min(groundTruth.xFn, detection.xFn) <br>
+y2 = min(groundTruth.yFn, detection.yFn) <br>
 
 
-Area of Intersection = max(0, x2 - x1 + 1) * max(0, y2 - y1 + 1) = **2,914**
+Area of Intersection = max(0, x2 - x1 + 1) * max(0, y2 - y1 + 1) = **2,914** <br>
 Are of Union = (3180+3007)-2914 = **3273**
 
 IOU = 2914/3273 = **0.89**
